@@ -1,0 +1,140 @@
+.navigation
+    &__toggle
+        display: none
+    &__button
+        background: $color-white
+        height: 6.5rem
+        width: 6.5rem
+        border-radius: 50%
+        position: fixed
+        top: 10rem
+        right: 10rem
+        z-index: 200
+        text-align: center
+        cursor: pointer
+
+    &__background
+        width: 6rem
+        height: 6rem
+        border-radius: 50%
+        background: radial-gradient($color-brown-light, $color-brown-dark)
+        position: fixed
+        right: 10.5rem
+        top: 10.5rem
+        z-index: 100
+        transition: all .7s
+        /* transform: scale(80) */
+    &__nav
+        height: 100vh
+        position: fixed
+        top: 0
+        right: 0
+        z-index: 150
+        opacity: 0
+        width: 0
+        transition: all .3s ease-in-out
+    &__list
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        list-style: none
+        width: 100%
+        
+    &__item
+        text-align: center
+        &:not(:last-child)
+            margin-bottom: 5rem
+    &__link
+        &:link, &:visited    
+            font-size: 4rem
+            color: $color-white
+            letter-spacing: .5rem
+            text-decoration: none
+            text-transform: uppercase
+            background: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%)
+            background-size: 220%
+            padding: 1rem 2rem
+            transition: all .4s
+            display: inline-block
+
+        &:hover, &:active
+            background-position: 100%
+            color: $color-brown-dark
+            transform: translateX(1rem)
+    &__toggle:checked ~ &__background
+        transform: scale(80)
+    &__toggle:checked ~ &__nav
+        width: 100%
+        opacity: 1
+
+    &__icon
+        position: relative
+        margin-top: 33px
+        @include respond(tab-land)
+            margin-top: 28px
+        @include respond(tab-port)
+            margin-top: 25px
+        @include respond(phone)
+            margin-top: 15px
+        @include respond(big-screen)
+            margin-top: 37px
+        &,
+        &::before,
+        &::after
+            width: 30px
+            height: 2px
+            background: $color-black
+            display: inline-block
+        @include respond(phone)
+            &,
+            &::before,
+            &::after
+                width: 16px
+        &::before,
+        &::after
+            content: ""
+            position: absolute
+            left: 0
+            transition: all .2s
+        &::before
+            top: -8px
+        &::after
+            top: 8px
+        @include respond(phone)
+            &::before
+                top: -6px
+            &::after
+                top: 6px
+
+
+
+
+
+    &__button:hover &__icon::before
+        top: -10px
+    &__button:hover &__icon::after
+        top: 10px
+    @include respond(phone)
+        &__button:hover &__icon::before
+            top: -6px
+        &__button:hover &__icon::after
+            top: 6px
+
+    &__toggle:checked + &__button &__icon
+        background: transparent
+    &__toggle:checked + &__button &__icon::before
+        top: 0
+        transform: rotate(135deg)
+    &__toggle:checked + &__button &__icon::after
+        top: 0
+        transform: rotate(-135deg)
+        
+        
+        
+        
+            
+
+        
+            
+        

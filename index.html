@@ -9,6 +9,24 @@
 </head>
 <body>
     <div class="container">
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__toggle" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background"></div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">про нас</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">знижки</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">найкращі тури</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">калькулятор ціни</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">зв'язатися з нами</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <header class="header">
             <img class="header__logo" src="icons/Icon-logo.svg" alt="logo">
             <div class="header__box">
@@ -19,6 +37,273 @@
                 <a href="#" class="btn btn_animated">наш каталог</a>
             </div>    
         </header>
+        <main>
+            <section class="section-about">
+                <div class="text-align-center margin-bottom-80px">
+                    <h2 class="title-secondary">Неймовірне відчуття свободи</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="title-third margin-bottom-10px">Дозвольте собі пригоду</h3>
+                        <p class="paragraph margin-bottom-30px">Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадженням і модернізації відповідних умов активизации. Таким чином, початок повсякденної роботи з формування позиції тягне.</p>
+                        <h3 class="title-third margin-bottom-10px">Вгору на 6000 метрів над рівнем моря</h3>
+                        <p class="paragraph margin-bottom-50px">Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадженням і модернізації відповідних умов активизации. Таким чином, початок повсякденної роботи з формування позиції тягне.</p>
+
+                        <a href="#" class="btn-text">Дізнатися більше &rarr;</a>
+                    </div>
+
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img
+                            src="img/photo-balloons-1.png"
+                            srcset="img/photo-balloons-1.jpg 954w,
+                                    img/photo-balloons-1-small.jpg 318w"
+                            sizes="(max-width: 1240px) 23vw,
+                                    (max-width: 900px) 44vw
+                                    (max-width: 600px) 47vw, 300px"
+                            alt="photo-balloons-1"
+                            class="composition__photo composition__photo_n1">
+                            
+                            <img
+                            src="img/photo-balloons-2.png"
+                            srcset="img/photo-balloons-2.jpg 954w,
+                                    img/photo-balloons-2-small.jpg 318w"
+                            alt="photo-balloons-2"
+                            class="composition__photo composition__photo_n2">
+                            
+                            <img
+                            src="img/photo-balloons-3.png"
+                            srcset="img/photo-balloons-3.jpg 954w,
+                                    img/photo-balloons-3-small.jpg 318w"
+                            alt="photo-balloons-3"
+                            class="composition__photo composition__photo_n3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-adventure">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="card-adventure">
+                            <img src="icons/earth-icon.svg" alt="Earth">
+                            <h3 class="margin-bottom-10px">Пригода</h3>
+                            <p class="paragraph paragraph_cards">Завдання організації, особливо ж розвиток різних особливо розвиток різних</p>
+                        </div>    
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="card-adventure">
+                            <img src="icons/location-icon.svg" alt="Location">
+                            <h3 class="margin-bottom-10px">Пригода</h3>
+                            <p class="paragraph paragraph_cards">Завдання організації, особливо ж розвиток різних особливо розвиток різних</p>
+                        </div>    
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="card-adventure">
+                            <img src="icons/compass-icon.svg" alt="Compass">
+                            <h3 class="margin-bottom-10px">Пригода</h3>
+                            <p class="paragraph paragraph_cards">Завдання організації, особливо ж розвиток різних особливо розвиток різних</p>
+                        </div>    
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="card-adventure">
+                            <img src="icons/path-icon.svg" alt="Path">
+                            <h3 class="margin-bottom-10px">Пригода</h3>
+                            <p class="paragraph paragraph_cards">Завдання організації, особливо ж розвиток різних особливо розвиток різних</p>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+            <section class="section-tour">
+                <div class="text-align-center margin-bottom-80px">
+                    <h2 class="title-secondary">Найбільш популярні тури</h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card-tour">
+                            <div class="card-tour__side card-tour__side_front">
+                                <div class="card-tour__img card-tour__img_1 margin-bottom-50px"></div>
+                                <h4 class="card-tour__title">
+                                    <span class="card-tour__span card-tour__span_1">Групові</span>
+                                    <br>
+                                    <span class="card-tour__span card-tour__span_2">тури</span>
+                                </h4>
+                                <div class="card-tour__descr">
+                                    <ul>
+                                        <li class="paragraph_cards">Групи від 6 людей</li>
+                                        <li class="paragraph_cards">Тривалість 2 години</li>
+                                        <li class="paragraph_cards">У групі 1 гід</li>
+                                        <li class="paragraph_cards">Дальність польоту 6км</li>
+                                        <li class="paragraph_cards">Безкоштовні сувеніри</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-tour__side card-tour__side_back">
+                                <div class="card-tour__backside-box">
+                                    <p class="card-tour__text card-tour__text_1 paragraph_uppercase">Повна вартість</p>
+                                    <p class="card-tour__text card-tour__text_2">2699&#8372</p>
+                                    <a href="#" class="btn btn_animated">Забронювати</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1-of-3">
+                        <div class="card-tour">
+                            <div class="card-tour__side card-tour__side_front">
+                                <div class="card-tour__img card-tour__img_2 margin-bottom-50px"></div>
+                                <h4 class="card-tour__title">
+                                    <span class="card-tour__span card-tour__span_1">Приватні</span>
+                                    <br>
+                                    <span class="card-tour__span card-tour__span_2">тури</span>
+                                </h4>
+                                <div class="card-tour__descr">
+                                    <ul>
+                                        <li class="paragraph_cards">Групи від 6 людей</li>
+                                        <li class="paragraph_cards">Тривалість 2 години</li>
+                                        <li class="paragraph_cards">У групі 1 гід</li>
+                                        <li class="paragraph_cards">Дальність польоту 6км</li>
+                                        <li class="paragraph_cards">Безкоштовні сувеніри</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-tour__side card-tour__side_back">
+                                <div class="card-tour__backside-box">
+                                    <p class="card-tour__text card-tour__text_1 paragraph_uppercase">Повна вартість</p>
+                                    <p class="card-tour__text card-tour__text_2">2699&#8372</p>
+                                    <a href="#" class="btn">Забронювати</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1-of-3">
+                        <div class="card-tour">
+                            <div class="card-tour__side card-tour__side_front">
+                                <div class="card-tour__img card-tour__img_3 margin-bottom-50px"></div>
+                                <h4 class="card-tour__title">
+                                    <span class="card-tour__span card-tour__span_1">Оглядові</span>
+                                    <br>
+                                    <span class="card-tour__span card-tour__span_2">майданчики</span>
+                                </h4>
+                                <div class="card-tour__descr">
+                                    <ul>
+                                        <li class="paragraph_cards">Групи від 6 людей</li>
+                                        <li class="paragraph_cards">Тривалість 2 години</li>
+                                        <li class="paragraph_cards">У групі 1 гід</li>
+                                        <li class="paragraph_cards">Дальність польоту 6км</li>
+                                        <li class="paragraph_cards">Безкоштовні сувеніри</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-tour__side card-tour__side_back">
+                                <div class="card-tour__backside-box">
+                                    <p class="card-tour__text card-tour__text_1 paragraph_uppercase">Повна вартість</p>
+                                    <p class="card-tour__text card-tour__text_2">2699&#8372</p>
+                                    <a href="#" class="btn">Забронювати</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-align-center">
+                    <a href="#" class="btn">Забронювати</a>
+                </div>
+            </section>
+
+            <section class="section-feedback">
+                <div class="bg-gradient"></div>
+                <video class="bg-video" autoplay muted loop>
+                    <source src="img/Balloons-video.mp4">
+                    <source src="img/Balloons-video.webm">
+                </video>
+                <div class="text-align-center margin-bottom-80px">
+                    <h2 class="title-secondary title-secondary_white">Відгуки наших клієнтів</h2>
+                </div>
+                <div class="row">
+                    <div class="feedback-card">
+                        <figure class="feedback-card__img">
+                            <img src="img/feedback-2.jpg" alt="feedback">
+                            <figcaption class="feedback-card__name">АНТОН
+                                РЯБІН</figcaption>
+                        </figure>
+                        <div class="feedback-card__box">
+                            <h3 class="title-third margin-bottom-10px">Я ОТРИМАВ МАСУ ВРАЖЕНЬ</h3>
+                            <p class="paragraph">Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадження та модернізації відповідних умов активізації. Таким чином, початок повсякденної роботи з формування позиції тягне. Завдання організації, особливо ж розвиток різних форм</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="feedback-card">
+                        <figure class="feedback-card__img">
+                            <img src="img/feedback-1.jpg" alt="feedback">
+                            <figcaption class="feedback-card__name">ЛІЗА ФРОЛОВА</figcaption>
+                        </figure>
+                        <div class="feedback-card__box">
+                            <h3 class="title-third margin-bottom-10px">ЦЕ БУЛО ЧУДОВО І НЕЗАБУТНЄ</h3>
+                            <p class="paragraph">Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадження та модернізації відповідних умов активізації. Таким чином, початок повсякденної роботи з формування позиції тягне. Завдання організації, особливо ж розвиток різних форм</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-align-center">
+                    <a href="#" class="btn">Забронювати</a>
+                </div>
+            </section>
+
+            <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <div class="text-align-center margin-bottom-30px">
+                                    <h2 class="title-secondary">Забронювати тур</h2>
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="text" class="form__input paragraph" placeholder="Ім'я прізвище" id="name" required>
+                                    <label for="name" class="form__label paragraph">Ваше ім'я і прізвище</label>    
+                                </div>
+
+                                <div class="form__group">
+                                    <input type="email" class="form__input paragraph" placeholder="Ваш email" id="email" required>
+                                    <label for="email" class="form__label paragraph">Ваш email</label>
+                                </div>
+
+                                <div class="form__group">
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-1" name="checked">
+                                        <label for="tour-1" class="form__label-radio"><span class="form__button-radio"></span>Груповий тур</label>
+                                    </div>
+
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio" id="tour-2" name="checked">
+                                        <label for="tour-2" class="form__label-radio"><span class="form__button-radio"></span>Приватний тур</label>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <button class="btn btn_brown">Забронювати</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <img class="footer__logo" src="icons/Icon-logo.svg" alt="logo">
+
+                <ul class="footer__nav">
+                    <li class="footer__nav-item paragraph_uppercase"><a href="#" class="footer__link">ПРО НАС</a></li>
+                    <li class="footer__nav-item paragraph_uppercase"><a href="#" class="footer__link">ЗНИЖКИ</a></li>
+                    <li class="footer__nav-item paragraph_uppercase"><a href="#" class="footer__link">НАЙКРАЩІ ТУРИ</a></li>
+                    <li class="footer__nav-item paragraph_uppercase"><a href="#" class="footer__link">КАЛЬКУЛЯТОР ЦІНИ</a></li>
+                    <li class="footer__nav-item paragraph_uppercase"><a href="#" class="footer__link">ЗВ'ЯЗАТИСЯ З НАМИ</a></li>
+                </ul>
+            </footer>
+        </main>
     </div>
 
 

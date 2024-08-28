@@ -1,0 +1,35 @@
+.footer
+    background: $color-gray-dark
+    padding: 8rem 0
+    &__logo
+        display: block
+        height: 15rem
+        margin: 0 auto
+        margin-bottom: 5rem
+        @include respond(tab-port)
+            margin-bottom: 8rem
+    &__nav
+        list-style: none
+        text-align: center
+        &-item
+            display: inline-block
+            &:not(:last-child)
+                margin-right: 5rem
+            @include respond(tab-port)
+                &:not(:last-child)
+                    margin-right: 6rem
+                &:nth-child(3)
+                    margin-right: 0
+                margin-bottom: 3rem
+    &__link
+        transition: transform .2s
+        &:link, &:visited
+            color: $color-white
+            text-decoration: none
+            text-transform: uppercase
+            display: inline-block
+        &:hover
+            transform: skew(15deg, 3deg)
+            color: $color-light-grey
+        &:active
+            color: $color-gray

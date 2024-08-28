@@ -2,7 +2,7 @@ body
     font-family: Roboto
     font-weight: 400
     color: $color-gray
-    font-size: 1.6rem
+    font-size: $font-size-paragraph
     letter-spacing: .2rem
     
 .title-first
@@ -19,6 +19,14 @@ body
         animation-duration: 2s
         animation-timing-function: ease
         backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 3.5rem
+        @include respond(tab-port)
+            font-size: 3rem
+            letter-spacing: .5rem
+        @include respond(phone)
+            font-size: 2.4rem
+                
     &__secondary
         display: block
         font-size: 4rem
@@ -29,3 +37,61 @@ body
         animation-timing-function: ease
         backface-visibility: hidden
         margin-bottom: 5rem
+        @include respond(tab-land)
+            font-size: 3rem
+            margin-bottom: 3.5rem
+        @include respond(tab-port)
+            letter-spacing: .4rem
+        @include respond(phone)
+            font-size: 2rem
+
+.title-secondary
+    /* text-align: center */
+    font-size: $font-size-paragraph-h2
+    letter-spacing: 1rem
+    text-transform: uppercase
+    font-weight: 800
+    background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 2%, rgba($color-brown-dark, 0.7) 99.94%)
+    -webkit-background-clip: text
+    color: $color-brown-light
+    transition: all .4s
+    backface-visibility: hidden
+    @include respond(tab-land)
+        font-size: 3rem
+    &:hover
+        transform: skewY(2deg) skewX(15deg) scale(1.1)
+        text-shadow: $h2-shadow
+        -webkit-background-clip: text
+    &_white
+        color: $color-white
+        &:hover
+            transform: skewY(2deg) skewX(15deg) scale(1.1)
+            text-shadow: $h2-shadow
+            -webkit-background-clip: text
+            color: $color-white
+    @include respond(phone)
+        letter-spacing: .6rem
+
+
+h3
+    font-size: $font-size-paragraph-h3
+    letter-spacing: .2rem
+    font-weight: 500
+    text-transform: uppercase
+    @include respond(tab-land)
+        font-size: 1.8rem
+.paragraph
+    font-size: $font-size-paragraph
+    letter-spacing: .2rem
+    line-height: 140%
+    font-weight: 400
+    @include respond(tab-land)
+        font-size: 1.5rem
+    &_cards
+        line-height: 120%
+        @include respond(tab-land)
+            font-size: 2rem
+    @include respond(tab-land)
+    &_uppercase
+        text-transform: uppercase
+        font-weight: 300
