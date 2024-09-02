@@ -3,7 +3,7 @@
     perspective: 150rem
     -moz-perspective: 150rem
     position: relative
-    @include respond(tab-port)
+    @media only screen and (max-width: 900px), (hover:none)
         height: auto
     
     &__side
@@ -18,11 +18,11 @@
         box-shadow: $box-shadow
         border-radius: .5rem
         overflow: hidden
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             height: auto
             position: relative
         &_front
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover:none)
                 padding-bottom: 12rem
         &_back
             background: green
@@ -30,7 +30,7 @@
             background: linear-gradient(120deg, $color-brown-light, $color-brown-dark)
             text-align: center
             padding-top: 10rem
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover:none)
                 transform: rotateY(0deg)
                 padding: 10rem 5rem 5rem 5rem
                 margin-top: -11rem
@@ -39,7 +39,7 @@
 
     &:hover &__side_front
         transform: rotateY(-180deg)
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             transform: rotate(0deg)
     &:hover &__side_back
         transform: rotateY(0deg)
@@ -48,14 +48,14 @@
         background-blend-mode: hard-light
         height: 21rem
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             height: 30rem
         &_1
-            background: $color-brown-light url(../img/card-img-1.jpg) center / cover no-repeat
+            background: $color-brown-light url("../img/card_tour_1.png") center / cover no-repeat
         &_2
-            background: $color-brown-light url(../img/card-img-2.jpg) center / cover no-repeat
+            background: $color-brown-light url("../img/card_tour_2.png") center / cover no-repeat
         &_3
-            background: $color-brown-light url(../img/Card-img-3.jpg) center / cover no-repeat
+            background: $color-brown-light url("../img/card_tour_3.png") center / cover no-repeat
 
     &__title
         font-size: 2.8rem
@@ -66,7 +66,7 @@
         position: absolute
         top: 17rem
         right: 0rem
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             top: 25rem
     &__span
         background: linear-gradient(90deg, $color-brown-light, $color-brown-dark)
@@ -78,7 +78,7 @@
             right: 0
             padding-bottom: 1rem
             padding-top: 0rem
-            @include respond(tab-port)
+            @media only screen and (max-width: 900px), (hover:none)
                 position: relative
                 top: 1rem
     
@@ -104,7 +104,7 @@
         left: 50%
         transform: translate(-50%, -50%)
         text-align: center
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             position: relative
             top: 0
             left: 0
@@ -116,7 +116,7 @@
         text-transform: uppercase
         text-align: center
         color: $color-white
-        @include respond(tab-port)
+        @media only screen and (max-width: 900px), (hover:none)
             margin-bottom: 4rem
         &_1
             font-size: $font-size-paragraph
